@@ -1,0 +1,355 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+    background-color: #f7f9fb;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #13aff9;
+}
+
+.nav-links a {
+    margin: 0 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #13aff9;
+}
+.nav-links i {
+    margin-right: 8px;
+    color: #13aff9; /* ikon rengi */
+  }
+
+/* Butonlar */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn.primary {
+    background-color: #13aff9;
+    color: white;
+    border: none;
+}
+
+.btn.primary:hover {
+    background-color: #0e90cf;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #13aff9;
+    border: 2px solid #13aff9;
+}
+
+.btn.secondary:hover {
+    background-color: #13aff9;
+    color: white;
+}
+
+/* Hero Alanı */
+.hero {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 3rem 2rem;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #13aff9;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.hero-buttons .btn {
+    margin-right: 1rem;
+}
+.image-grid {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .image-grid .main {
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Küçük görseller */
+  .image-grid img:not(.main) {
+    position: absolute;
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Konumlandırmalar */
+  .image-grid .top-right {
+    top: -30px;
+    right: -50px;
+  }
+  
+  .image-grid .bottom-left {
+    bottom: -30px;
+    left: -50px;
+  }
+  
+  .image-grid .bottom-right {
+    bottom: -30px;
+    right: -50px;
+  }
+
+  .project-description {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .description-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-description h2 {
+    font-size: 2rem;
+    color: #13aff9;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-description p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  
+
+/* Oyunlar - Detaylı Bilgiler Bölümü */
+.game-details {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.game-details h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #13aff9;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 340px; /* Genişlik artırıldı */
+    background: #f0f7fc;
+    border-radius: 12px;
+    padding: 1rem;
+    scroll-snap-align: start;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .slide:hover {
+    transform: scale(1.03);
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .slide-text h3 {
+    font-size: 1.2rem;
+    color: #13aff9;
+    margin-bottom: 0.5rem;
+  }
+  
+  .slide-text p {
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+    margin-bottom: 1rem;
+    color: #13aff9;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+
+/* Uygulama Ekran Görüntüleri */
+.screenshots {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f0f7fc;
+}
+
+.screenshots h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #13aff9;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: #13aff9;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 0.8rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    /* resmin üstünde çıkar */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #e4f2fb;
+    color: #555;
+    font-size: 0.9rem;
+}

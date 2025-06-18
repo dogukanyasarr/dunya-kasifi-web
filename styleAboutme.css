@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+    background-color: #f7f9fb;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #13aff9;
+    margin-bottom: 2rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #13aff9;
+}
+
+.nav-links a {
+    margin: 0 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #13aff9;
+}
+
+.nav-links i {
+    margin-right: 8px;
+    color: #13aff9;
+    /* ikon rengi */
+}
+
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.team-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 380px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-card h3 {
+    color: #13aff9;
+    margin-bottom: 0.5rem;
+}
+
+.team-card .socials {
+    margin: 0.5rem 0 1rem 0;
+}
+
+.team-card .socials a {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.team-card .socials a:hover {
+    color: #13aff9;
+}
+
+.team-card p {
+    font-size: 0.95rem;
+    color: #444;
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #e4f2fb;
+    color: #555;
+    font-size: 0.9rem;
+}

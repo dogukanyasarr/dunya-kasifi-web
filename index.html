@@ -1,1 +1,200 @@
-root
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dünya Kaşifi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">🌍 Dünya Kaşifi</div>
+        <nav class="nav-links">
+            <a href="#anasayfa"><i class="fas fa-house"></i> Anasayfa</a>
+            <a href="http://127.0.0.1:5500/aboutme.html"><i class="fas fa-info-circle"></i> Hakkımızda</a>
+            <a href="#uygulama"><i class="fas fa-image"></i> Galeri</a>
+            <a href="#"><i class="fas fa-envelope"></i> İletişim</a>
+          </nav>
+    </header>
+
+    <!-- hero  -->
+    <main id="anasayfa" class="hero">
+        <div class="hero-content">
+            <h1>Dilediğin Gibi Keşfet, Öğren, Oyna</h1>
+            <p>Dünya Kaşifi uygulamasıyla çocuklar hem eğleniyor hem de dünyayı tanıyor! Artırılmış gerçeklik ve
+                oyunlaştırma seni bekliyor.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn primary">Uygulamayı İndir</a>
+                <a href="#oyunlar" class="btn secondary">Daha Fazla Bilgi</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-grid">
+                <img class="main" src="resim.png" alt="Ana Görsel">
+                <img class="top-right" src="resim.png" alt="Üst Sağ Küçük">
+                <img class="bottom-left" src="resim.png" alt="Alt Sol Küçük">
+                <img class="bottom-right" src="resim.png" alt="Alt Sağ Küçük">
+            </div>
+        </div>
+    </main>
+
+    <!-- Text Bölümü -->
+    <section class="project-description">
+        <div class="description-container">
+            <h2>Projemiz Hakkında</h2>
+            <p>
+                Dünya Kaşifi, çocukların eğlenerek öğrenmesini hedefleyen yenilikçi bir mobil uygulamadır.
+                Uygulama, artırılmış gerçeklik (AR) teknolojisi ve oyunlaştırma unsurları ile çocuklara farklı
+                kültürleri, ülkeleri, hayvanları ve coğrafi bilgileri interaktif bir şekilde sunar.
+            </p>
+            <p>
+                Kullanıcılar uygulama içerisinde çeşitli keşif görevleri, eşleştirme oyunları ve 3 boyutlu deneyimlerle
+                hem bilgi kazanır hem de keyifli vakit geçirir. Eğitim teknolojilerini eğlenceyle harmanlayan bu proje,
+                özellikle 6-12 yaş grubundaki çocuklar için tasarlanmıştır.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- detaylı bilgiler bölümü -->
+    <section id="oyunlar" class="game-details">
+        <h2>Oyunlar ve Keşif Modülleri</h2>
+        <div class="slider-container">
+            <div class="slide" onclick="openModal('modal1')">
+                <img src="resim.png" alt="Oyun 1">
+                <h3>Bayrak Bulmaca</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, aspernatur facere quasi sed
+                    exercitationem ipsa. Similique voluptatibus, eos quasi distinctio ab, voluptatum molestias quod
+                    reiciendis, minus exercitationem culpa. Optio, expedita! Provident exercitationem at unde eveniet
+                    nihil labore quos dolor fuga.</p>
+            </div>
+            <div class="slide" onclick="openModal('modal1')">
+                <img src="resim.png" alt="Oyun 1">
+                <h3>Bayrak Bulmaca</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, iure. Magnam facilis dignissimos vero
+                    eligendi consequatur, et quod? Id voluptatibus ipsa maxime nam et, magni cum. Quisquam ducimus saepe
+                    minus?</p>
+            </div>
+            <div class="slide" onclick="openModal('modal1')">
+                <img src="resim.png" alt="Oyun 1">
+                <h3>Bayrak Bulmaca</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum optio quod, exercitationem
+                    perspiciatis vitae minus totam hic! Explicabo esse praesentium facere similique, voluptatum enim
+                    repellendus sed modi nam aliquam officiis?</p>
+            </div>
+            <div class="slide" onclick="openModal('modal1')">
+                <img src="resim.png" alt="Oyun 1">
+                <h3>Bayrak Bulmaca</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam eligendi eveniet delectus, cumque
+                    culpa recusandae obcaecati quaerat? Doloremque alias facere dolore, repellat incidunt nulla, aliquid
+                    laudantium a, architecto quisquam eos!</p>
+            </div>
+            <div class="slide" onclick="openModal('modal1')">
+                <img src="resim.png" alt="Oyun 1">
+                <h3>Bayrak Bulmaca</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab natus nobis provident magnam numquam
+                    doloremque explicabo dolore fuga maxime voluptatem, officia, corrupti molestias ad. A accusamus
+                    reiciendis quisquam voluptates. Minima.</p>
+            </div>
+            <div class="slide" onclick="openModal('modal1')">
+                <img src="resim.png" alt="Oyun 1">
+                <h3>Bayrak Bulmaca</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint fugiat odit delectus eveniet nulla!
+                    Voluptas commodi tempora dicta, neque reprehenderit ullam. Hic itaque, voluptas nam illo ut possimus
+                    dignissimos et?</p>
+            </div>
+
+            <div class="slide" onclick="openModal('modal2')">
+                <img src="resim.png" alt="Oyun 2">
+                <h3>Bayrak Bulmaca</h3>
+            </div>
+            <div class="slide" onclick="openModal('modal3')">
+                <img src="resim.png" alt="Oyun 3">
+                <h3>Bayrak Bulmaca</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h3>Bayrak Bulmaca</h3>
+            <p>Çeşitli ülkelerin bayraklarını eşleştirerek coğrafi bilginizi pekiştirin!</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h3>Hayvanları Tanı</h3>
+            <p>AR teknolojisi ile hayvanları 3 boyutlu gör ve yaşam alanlarını öğren.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h3>Ülke Eşleştirme</h3>
+            <p>Ülkeler ile meşhur yemekleri, bayrakları ve yerleri eşleştirerek öğren!</p>
+        </div>
+    </div>
+
+
+
+    <!-- uygulamadan kareler -->
+
+    <section id="uygulama" class="screenshots">
+        <h2>Uygulamadan Kareler</h2>
+        <div class="gallery">
+            <div class="tooltip">
+                <img src="resim.png" alt="Ekran 1">
+                <span class="tooltiptext">Harita ekranı: Çocuklar dünyayı keşfetmeye buradan başlar.</span>
+            </div>
+            <div class="tooltip">
+                <img src="resim.png" alt="Ekran 2">
+                <span class="tooltiptext">Görev ekranı: Görevleri tamamla, rozetleri topla!</span>
+            </div>
+            <div class="tooltip">
+                <img src="resim.png" alt="Ekran 3">
+                <span class="tooltiptext">AR deneyimi: Kamerayı kullanarak 3D keşif yap.</span>
+            </div>
+            <div class="tooltip">
+                <img src="resim.png" alt="Ekran 1">
+                <span class="tooltiptext">Harita ekranı: Çocuklar dünyayı keşfetmeye buradan başlar.</span>
+            </div>
+            <div class="tooltip">
+                <img src="resim.png" alt="Ekran 2">
+                <span class="tooltiptext">Görev ekranı: Görevleri tamamla, rozetleri topla!</span>
+            </div>
+            <div class="tooltip">
+                <img src="resim.png" alt="Ekran 3">
+                <span class="tooltiptext">AR deneyimi: Kamerayı kullanarak 3D keşif yap.</span>
+            </div>
+            <div class="tooltip">
+                <img src="resim.png" alt="Ekran 1">
+                <span class="tooltiptext">Harita ekranı: Çocuklar dünyayı keşfetmeye buradan başlar.</span>
+            </div>
+            <div class="tooltip">
+                <img src="resim.png" alt="Ekran 2">
+                <span class="tooltiptext">Görev ekranı: Görevleri tamamla, rozetleri topla!</span>
+            </div>
+            <div class="tooltip">
+                <img src="resim.png" alt="Ekran 3">
+                <span class="tooltiptext">AR deneyimi: Kamerayı kullanarak 3D keşif yap.</span>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2025 Dünya Kaşifi. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+
+</html>
